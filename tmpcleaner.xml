@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.8" type="plugin" group="jzcron" method="upgrade">
+	<name>PLG_JZCRON_TMPCLEANER</name>
+	<author>Nerudas</author>
+	<creationDate>October 2017</creationDate>
+	<copyright>Copyright (c) 2015 - 2017 Nerudas. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>support@nerudas.ru</authorEmail>
+	<authorUrl>nerudas.ru</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_JZCRON_TMPCLEANER_DESCRIPTION</description>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_jzcron_tmpcleaner.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_jzcron_tmpcleaner.sys.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.plg_jzcron_tmpcleaner.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.plg_jzcron_tmpcleaner.sys.ini</language>
+	</languages>
+	<files>
+		<filename plugin="tmpcleaner">tmpcleaner.php</filename>
+		<filename>options.xml</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+			</fieldset>
+		</fields>
+	</config>
+</extension>

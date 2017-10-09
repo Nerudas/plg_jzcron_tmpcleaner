@@ -1,2 +1,2 @@
-# plg_jzcron_tmpcleaner
-JZ Cron - TmpCleaner Plugin
+# JZ Cron - TmpCleaner Plugin
+Subtask to delete temporary files or directory

@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <form>
 	<fieldset name="options">
+		<field name="mode" type="list" label="PLG_JZCRON_TMPCLEANER_MODE">
+			<option value="files">PLG_JZCRON_TMPCLEANER_MODE_FILES</option>
+			<option value="directories">PLG_JZCRON_TMPCLEANER_MODE_DIRECTORIES</option>
+			<option value="all">PLG_JZCRON_TMPCLEANER_MODE_ALL</option>
+		</field>
+		<field name="path" type="text" label="PLG_JZCRON_TMPCLEANER_PATH" />
+		<field name="match" type="text" label="PLG_JZCRON_TMPCLEANER_MATCH" />
 	</fieldset>
 </form>

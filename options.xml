@@ -6,7 +6,23 @@
 			<option value="directories">PLG_JZCRON_TMPCLEANER_MODE_DIRECTORIES</option>
 			<option value="all">PLG_JZCRON_TMPCLEANER_MODE_ALL</option>
 		</field>
-		<field name="path" type="text" label="PLG_JZCRON_TMPCLEANER_PATH" />
-		<field name="match" type="text" label="PLG_JZCRON_TMPCLEANER_MATCH" />
+		<field name="path" type="text" label="PLG_JZCRON_TMPCLEANER_PATH"/>
+		<field name="filter" type="text" label="PLG_JZCRON_TMPCLEANER_FILTER"/>
+		<field name="time_number" type="number"
+			   label="PLG_JZCRON_TMPCLEANER_TIME"
+			   default="1"
+			   min="1"
+			   step="1"/>
+		<field name="time_value" type="list"
+			   label=" "
+			   default="minutes">
+			<option value="seconds">PLG_JZCRON_TMPCLEANER_TIME_SECONDS</option>
+			<option value="minutes">PLG_JZCRON_TMPCLEANER_TIME_MINUTES</option>
+			<option value="hours">PLG_JZCRON_TMPCLEANER_TIME_HOURS</option>
+			<option value="day">PLG_JZCRON_TMPCLEANER_TIME_DAY</option>
+			<option value="week">PLG_JZCRON_TMPCLEANER_TIME_WEEK</option>
+			<option value="month">PLG_JZCRON_TMPCLEANER_TIME_MONTH</option>
+			<option value="year">PLG_JZCRON_TMPCLEANER_TIME_YEAR</option>
+		</field>
 	</fieldset>
 </form>

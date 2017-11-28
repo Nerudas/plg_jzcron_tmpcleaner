@@ -25,4 +25,9 @@
 			</fieldset>
 		</fields>
 	</config>
+	<updateservers>
+		<server type="extension" priority="1" name="JZ Cron - TmpCleaner Plugin">
+			https://update.nerudas.ru?extension=plg_jzcron_tmpcleaner
+		</server>
+	</updateservers>
 </extension>

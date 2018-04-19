@@ -1,7 +1,7 @@
 # JZ Cron - TmpCleaner Plugin
 Subtask to delete temporary files or directory
 
-**Supported Joomla versions:** 3.8.0 or later  
+**Supported Joomla versions:** 3.8.0 and later  
 
 
 ## Internal project - No support

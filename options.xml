@@ -6,6 +6,12 @@
 			<option value="directories">PLG_JZCRON_TMPCLEANER_MODE_DIRECTORIES</option>
 			<option value="all">PLG_JZCRON_TMPCLEANER_MODE_ALL</option>
 		</field>
+		<field name="recursive" type="list"
+			   label="PLG_JZCRON_TMPCLEANER_RECURSIVE"
+				showon="mode:directories,all">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
 		<field name="path" type="text" label="PLG_JZCRON_TMPCLEANER_PATH"/>
 		<field name="filter" type="text" label="PLG_JZCRON_TMPCLEANER_FILTER"/>
 		<field name="time_number" type="number"

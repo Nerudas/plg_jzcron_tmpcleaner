@@ -31,17 +31,18 @@ class plgJZCronTmpCleaner extends CMSPlugin
 		$count = 0;
 		if ($options->get('path', false))
 		{
-			$path   = JPATH_ROOT . '/' . trim($options->get('path'), '/');
-			$mode   = $options->get('mode', 'directories');
-			$filter = $options->get('filter');
-			$time   = (!empty($options->get('time_number', 0))) ?
+			$path      = JPATH_ROOT . '/' . trim($options->get('path'), '/');
+			$mode      = $options->get('mode', 'directories');
+			$filter    = $options->get('filter');
+			$time      = (!empty($options->get('time_number', 0))) ?
 				'-' . $options->get('time_number') . ' ' . $options->get('time_value') : '';
-			$date   = new JDate('now' . $time);
-			$date   = $date->__toString();
+			$date      = new JDate('now' . $time);
+			$date      = $date->__toString();
+			$recursive = $options->get('recursive', false);
 
 			if ($mode == 'directories' || $mode == 'all')
 			{
-				$count = $count + $this->deleteDirectories($path, $filter, $date);
+				$count = $count + $this->deleteDirectories($path, $filter, $date, $recursive);
 			}
 
 			if ($mode == 'files' || $mode == 'all')
@@ -83,25 +84,25 @@ class plgJZCronTmpCleaner extends CMSPlugin
 
 	/** Delete directories
 	 *
-	 * @param string $path   path to directories
-	 * @param string $filter mathc case
-	 * @param  JDate $date   date check
+	 * @param string $path      path to directories
+	 * @param string $filter    mathc case
+	 * @param  JDate $date      date check
+	 * @param  bool  $recursive recursive delete
 	 *
 	 * @return int
 	 *
 	 * @since 1.0.0
 	 */
-	protected function deleteDirectories($path, $filter, $date)
+	protected function deleteDirectories($path, $filter, $date, $recursive)
 	{
 
 		$count = 0;
 
-		$directories = JFolder::folders($path, $filter);
+		$directories = JFolder::folders($path, $filter, $recursive, true);
 		if (count($directories) > 0)
 		{
 			foreach ($directories as $directory)
 			{
-				$directory = $path . '/' . $directory;
 				$stat      = stat($directory);
 				$mdate     = new JDate($stat['mtime']);
 				$mdate     = $mdate->__toString();

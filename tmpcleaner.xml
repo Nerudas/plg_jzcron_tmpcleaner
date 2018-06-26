@@ -2,12 +2,12 @@
 <extension version="3.8" type="plugin" group="jzcron" method="upgrade">
 	<name>PLG_JZCRON_TMPCLEANER</name>
 	<author>Nerudas</author>
-	<creationDate>October 2017</creationDate>
+	<creationDate>June 2018</creationDate>
 	<copyright>Copyright (c) 2015 - 2017 Nerudas. All rights reserved.</copyright>
 	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
 	<authorEmail>support@nerudas.ru</authorEmail>
 	<authorUrl>nerudas.ru</authorUrl>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<description>PLG_JZCRON_TMPCLEANER_DESCRIPTION</description>
 	<languages folder="language">
 		<language tag="en-GB">en-GB/en-GB.plg_jzcron_tmpcleaner.ini</language>
